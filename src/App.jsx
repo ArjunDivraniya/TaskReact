@@ -23,6 +23,8 @@ import imag17 from './assets/image10.png'
 import imag18 from './assets/User.png'
 import imag19 from './assets/image11.png'
 import imag20 from './assets/heart.png'
+import imag21 from  './assets/Music Player Options.png'
+import imag22 from  './assets/Right options.png'
 
 
 
@@ -36,17 +38,19 @@ function App() {
     <div className="main">
     <div className="spotify">
     <div className="sidebar">
-       <div className="icon"></div> <div className="logo"><img src={logo}alt=""/></div>
+      
+      <div className="section">
+         <div className="icon"></div> <div className="logo"><img src={logo}alt=""/></div>
     <div className="image"><img src={imag1} alt=""/><b>home </b> </div>
 <div className="image"><img src={imag2} alt=""/><b>Search</b></div>   
 <div className="image"><img src={imag3} alt="" />Your Library</div>
-
-
+</div>
+<div className="section">
    <div className="image"><img src={imag4} alt="" />Create Playlist</div> 
    <div className="image"><img src={imag5} alt=""/>Like Songs</div>
    <div className="image"><img src={imag6} alt=""/> Youre pisodes</div>
-
-
+</div>
+<div className="section">
     <div className="image"> FAV</div>
     <div className="image">Daily Mix 1</div>
     <div className="image">Discover Weekly</div>
@@ -56,7 +60,7 @@ function App() {
     <div className="image"></div>
 
 
-</div>
+</div></div>
 
 
 <div className="songs">
@@ -139,12 +143,15 @@ function App() {
 </div>
 <div className="playbar">
     <div className="now" >
-        <div><img src={imag19} alt=""/></div>
+        <div className='now-image'><img src={imag19} alt=""/></div>
    <div className="name"><div>Dreming on</div>
    <div>NEFFEX</div></div>
-   <div><img src={imag20} alt=""/></div>
+   <div><img className='last' src={imag20} alt=""/></div>
     </div>
+    <div className="playoption"><img src={imag21} alt="" /></div>
+    <div className="lastimage"><img src={imag22} alt="" /></div>
 </div>
+<div className="green"><b>Listening on Asus Tuf Gaming F17</b></div>
     </div>
     </>
   )
